@@ -18,7 +18,7 @@ const estado = reactive<{ listaDeLibros: Libro[] }>({
       dimensiones: '12 x 19 cm',
       isbn13: '9789584245182',
       categoria: 'Ciencias',
-      portadaUrl: '../../public/img/Unabrevehistoriadeltiempo.webp',
+      portadaUrl: '/img/Unabrevehistoriadeltiempo.webp',
     },
     {
       titulo: 'Hábitos atómicos',
@@ -36,7 +36,7 @@ const estado = reactive<{ listaDeLibros: Libro[] }>({
       dimensiones: '13 x 19 cm',
       isbn13: '9786287574922',
       categoria: 'Desarrollo personal',
-      portadaUrl: '../../public/img/habitosatomicos.webp',
+      portadaUrl: '/img/habitosatomicos.webp',
     },
     {
       titulo: 'Pensar rápido, pensar despacio',
@@ -53,7 +53,7 @@ const estado = reactive<{ listaDeLibros: Libro[] }>({
       dimensiones: '23 x 15 cm',
       isbn13: '9789566247838',
       categoria: 'Desarrollo personal',
-      portadaUrl: '../../public/img/pensar-rapido-pensar-despacio.webp',
+      portadaUrl: '/img/pensar-rapido-pensar-despacio.webp',
     },
     {
       titulo: 'Privacidad es Poder',
@@ -69,7 +69,7 @@ const estado = reactive<{ listaDeLibros: Libro[] }>({
       edicion: '001',
       formato: 'Libro Físico',
       categoria: 'Informática',
-      portadaUrl: '../../public/img/privacidad-es-poder.webp',
+      portadaUrl: '/img/privacidad-es-poder.webp',
       descripcion:
         'Seleccionado por The Economist como uno de los libros del año. La guía definitiva para afrontar uno de los problemas más acuciantes de nuestro tiempo: la pérdida de la privacidad. Nos vigilan. Saben que estás leyendo estas palabras. Gobiernos y cientos de empresas nos espían: a ti y a todos tus conocidos. A todas horas, todos los días. Rastrean y registran todo lo que pueden: nuestra ubicación, nuestras comunicaciones, nuestras búsquedas en internet, nuestra información biométrica, nuestras relaciones sociales, nuestras compras, nuestros problemas médicos y mucho más. Quieren saber quiénes somos, qué pensamos, dónde nos duele. Quieren predecir nuestro comportamiento e influir en él. Tienen demasiado poder. Su poder proviene de nosotros, de ti, de tus datos. Recuperar la privacidad es la única manera de que podamos asumir de nuevo el mando de nuestras vidas y de nuestras sociedades. La privacidad es tan colectiva como personal, y es hora de retomar el control. Privacidad es poder es el primer libro que propone el fin de la economía de los datos. Carissa Véliz explica cómo nuestros datos personales están cediendo demasiado poder a las grandes empresas tecnológicas y a los gobiernos, por qué esto es importante y qué podemos hacer al respecto.',
     },
@@ -102,7 +102,7 @@ const estado = reactive<{ listaDeLibros: Libro[] }>({
       isbn13: '9789566190523',
       formato: 'Libro Físico',
       categoria: 'Ciencias',
-      portadaUrl: '../../public/img/el-triangulo-de-cerro-moreno.webp',
+      portadaUrl: '/img/el-triangulo-de-cerro-moreno.webp',
       descripcion:
         'Extraños sucesos tienen lugar en el cielo del norte de Chile. Aviones y pilotos desaparecen sin dejar rastro. Esta es su desconocida historia, hasta ahora..Antofagasta, enero, 1981. Un vuelo de rutina marcará el destino del piloto Carlos González de la Fuerza Área de Chile. Su sueño de avanzar en la carrera militar y ofrecerle un mejor pasar a su esposa y su pequeño hijo se verán interrumpidos debido a un inexplicable suceso ocurrido mientras piloteaba su Hawker Hunter. El fenómeno del que fue testigo lo hará dudar de su cordura. Esta novela revela una serie de misteriosos acontecimientos, registrados durante décadas en la zona de Cerro Moreno en Antofagasta, a través de una inquietante trama llena de suspenso, que amenaza los límites de la realidad que conocemos.',
     },
