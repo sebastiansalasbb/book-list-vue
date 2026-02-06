@@ -24,7 +24,7 @@ const filtrarLibro = computed(() => {
   <Navbar />
 
   <div class="container d-flex flex-column align-items-center py-5">
-    <img :src="filtrarLibro.portadaUrl" alt="" class="" />
+    <img :src="filtrarLibro?.portadaUrl" alt="" class="" />
     <table class="table mt-5">
       <tbody>
         <tr>

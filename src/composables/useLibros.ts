@@ -1,6 +1,7 @@
+import type { Libro } from '@/types/libro'
 import { reactive } from 'vue'
 
-const estado = reactive({
+const estado = reactive<{ listaDeLibros: Libro[] }>({
   listaDeLibros: [
     {
       titulo: 'Una breve historia del tiempo',
@@ -109,12 +110,14 @@ const estado = reactive({
 })
 
 export const useLibros = () => {
-  const anadirLibro = (nuevoLibro) => {
+  const anadirLibro = (nuevoLibro: Libro) => {
     estado.listaDeLibros.push(nuevoLibro)
   }
 
-  const eliminarLibro = ({ tituloPorBorrar }) => {
-    const librosFiltrados = estado.listaDeLibros.filter((item) => item.titulo !== tituloPorBorrar)
+  const eliminarLibro = ({ tituloPorBorrar }: { tituloPorBorrar: string }) => {
+    const librosFiltrados = estado.listaDeLibros.filter(
+      (item: Libro) => item.titulo !== tituloPorBorrar,
+    )
     estado.listaDeLibros = [...librosFiltrados]
   }
 

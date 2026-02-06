@@ -1,25 +1,18 @@
 <script setup lang="ts">
-import { useRoute } from 'vue-router'
+import type { Libro } from '@/types/libro'
 
-const props = defineProps({
-  listaDeLibros: {
-    type: Array,
-    required: true,
-  },
-  leccion: {
-    type: Number,
-    required: true,
-  },
-  detalle: {
-    type: Boolean,
-    required: true,
-  },
-})
+const props = defineProps<{
+  listaDeLibros: Libro[]
+  leccion: number
+  detalle: boolean
+}>()
 
-const emits = defineEmits(['eliminar-libro'])
+const emit = defineEmits<{
+  (e: 'eliminar-libro', payload: { tituloPorBorrar: string }): void
+}>()
 
-const eliminarLibro = (tituloPorBorrar) => {
-  emits('eliminar-libro', { tituloPorBorrar })
+const eliminarLibro = (tituloPorBorrar: string) => {
+  emit('eliminar-libro', { tituloPorBorrar })
 }
 </script>
 
