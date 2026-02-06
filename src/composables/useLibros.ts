@@ -85,7 +85,7 @@ const estado = reactive<{ listaDeLibros: Libro[] }>({
       isbn13: '9789585084698',
       formato: 'Libro Físico',
       categoria: 'Informática',
-      portadaUrl: '../../public/img/inteligencia-artificial-aplicada.webp',
+      portadaUrl: '/img/inteligencia-artificial-aplicada.webp',
       descripcion:
         'Este libro explora la aplicación de la inteligencia artificial en la educación, analizando tendencias, casos prácticos, desafíos y oportunidades en un contexto de innovación acelerada. Desde sistemas de tutoría adaptativa hasta herramientas predictivas para evaluar el rendimiento estudiantil y la automatización de tareas administrativas, ofrece una visión integral y actualizada sobre cómo la IA está transformando el ámbito educativo.',
     },
